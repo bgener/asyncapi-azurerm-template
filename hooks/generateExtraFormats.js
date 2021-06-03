@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 module.exports = {
-  'generate:after': generatePdfPngSvg
+  // 'generate:after': generatePdfPngSvg
 };
 
 async function generatePdfPngSvg(generator) {

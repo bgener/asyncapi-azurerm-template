@@ -11,7 +11,7 @@ import { generateMermaidDiagram } from '../helpers/mermaidDiagram';
 export function Parameters({ asyncapi }) {  
   return `
 {
-  
+  "parameters": {}
 }
 `;
 }

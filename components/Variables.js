@@ -5,7 +5,7 @@
 export function Variables({ asyncapi }) {
   return `
 {
-  
+  "variables": {}
 }
 `;
 }

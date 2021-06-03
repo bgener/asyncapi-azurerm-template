@@ -1,6 +1,6 @@
 export function Resources({ asyncapi }) {
   return `
-{
+  "resources": [
   {
     "type": "Microsoft.Servicebus/namespaces/queues",
     "apiVersion": "2017-04-01",
@@ -16,6 +16,6 @@ export function Resources({ asyncapi }) {
       "enablePartitioning": true
     }
   }
-}
+]
 `;
 }

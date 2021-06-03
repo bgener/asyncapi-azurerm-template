@@ -1,13 +1,14 @@
 import { File } from '@asyncapi/generator-react-sdk';
 import { generateExample } from '@asyncapi/generator-filters';
 
-import { HTML, Head, Body } from '../../components/common';
 import { normalizeSchemaName } from '../../helpers/normalizeSchemaName';
 
 /*
  * To render multiple files, it is enough to return an array of "File" components in the rendering component, like in following example.
  */
 export default function({ asyncapi }) {
+  //TODO: generate nodejs azure func
+
   const schemas = asyncapi.allSchemas();
   // schemas is an instance of the Map
   return Array.from(schemas).map(([schemaName, schema]) => {
@@ -35,14 +36,6 @@ function SchemaFile({ schemaName, schema }) {
 `;
 
   return (
-    <HTML>
-      <Head 
-        title={`${schemaName} schema`}
-        cssLinks={['https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css']}
-      />
-      <Body>
-        {content}
-      </Body>
-    </HTML>
+    {content}
   );
 }

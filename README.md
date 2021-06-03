@@ -7,5 +7,5 @@ This generator creates an Azure Resource Manager (ARM) template of Azure Functio
 In order to run the generator use the sample file `asyncapi.yaml` as follows:
 
 ```bash
-ag asyncapi.yaml https://github.com/asyncapi/template-for-generator-templates -o output
+ag asyncapi.yaml https://github.com/bgener/asyncapi-azurerm-template -o output
 ```

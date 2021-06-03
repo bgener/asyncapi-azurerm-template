@@ -1,7 +1,7 @@
 {
-  "name": "template-for-generator-templates",
+  "name": "@asyncapi/azurerm-template",
   "version": "0.0.1",
-  "description": "Template for generator templates to make it much easier to start writing your own generator template",
+  "description": "Azure Resource Manager (ARM) template for the AsyncApi generator",
   "main": "index.js",
   "scripts": {
     "test": "npm run testTemplate && npm run testHooks && npm run testFilters",
@@ -23,7 +23,7 @@
     "generator",
     "template"
   ],
-  "author": "Lukasz Gornicki <lpgornicki@gmail.com> (https://github.com/derberg/)",
+  "author": "Borys Generalov <bgener@gmail.com> (https://github.com/bgener/)",
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public"

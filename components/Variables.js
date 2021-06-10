@@ -1,9 +1,13 @@
-/* 
- * Here you can see example of complex operations. 
- * You can actually do whatever you want. It is important that the value returned from the function must be a string or a component.
- */
 export function Variables({ asyncapi }) {
+  const apiName = asyncapi.info().title();
+
+  const channelEntries = Object.keys(asyncapi.channels()).length ? Object.entries(asyncapi.channels()) : [];
+  const channels = channelEntries.map(([channelName, channel]) => `${channelName}`);
+
   return `
-  "variables": {}
+  "variables": {
+    "serviceBusName": "${apiName}",
+    "serviceBusQueues": [${channels.join(',')}]
+  }
 `;
 }

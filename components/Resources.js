@@ -12,7 +12,6 @@ export function Resources({ asyncapi }) {
     },
     "properties": {
       "deadLetteringOnMessageExpiration": true,
-      "maxDeliveryCount": 5,
       "enablePartitioning": true
     }
   }

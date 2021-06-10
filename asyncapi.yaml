@@ -3,7 +3,7 @@ asyncapi: 2.0.0
 info:
   title: Azure Service Bus serverless receiver
   version: 1.0.0
-  description: This service is an Azure function that receives messages from the Azure Servie Bus queue
+  description: This service is an Azure function that receives messages from the Azure Service Bus queue
   
 servers:
   azureCloud:
@@ -16,6 +16,7 @@ channels:
     subscribe:
       message:
         $ref: '#/components/messages/UserSignedUp'
+        
 components:
   messages:
     UserSignedUp:
